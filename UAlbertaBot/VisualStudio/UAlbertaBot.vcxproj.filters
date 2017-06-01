@@ -34,6 +34,9 @@
     <Filter Include="util">
       <UniqueIdentifier>{59599488-4576-44ab-8522-7d65a6425e15}</UniqueIdentifier>
     </Filter>
+    <Filter Include="game\macro\tpa27">
+      <UniqueIdentifier>{ec59a05b-ffc8-4398-9917-710a74cd6773}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\Source\CombatCommander.cpp">
@@ -152,6 +155,24 @@
     </ClCompile>
     <ClCompile Include="..\Source\Logger.cpp">
       <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\tpa27\Rule.cpp">
+      <Filter>game\macro\tpa27</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\tpa27\RuleBase.cpp">
+      <Filter>game\macro\tpa27</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\tpa27\RuleBasedSystem.cpp">
+      <Filter>game\macro\tpa27</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\tpa27\Term.cpp">
+      <Filter>game\macro\tpa27</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\tpa27\KnowledgeBase.cpp">
+      <Filter>game\macro\tpa27</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Source\tpa27\Parameter.cpp">
+      <Filter>game\macro\tpa27</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -278,5 +299,37 @@
     <ClInclude Include="..\Source\GameHistory.hpp">
       <Filter>game\util</Filter>
     </ClInclude>
+    <ClInclude Include="..\Source\tpa27\KnowledgeBase.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\tpa27\Rule.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\tpa27\RuleBase.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\tpa27\RuleBasedSystem.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\tpa27\Term.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\tpa27\EffectType.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Source\tpa27\Parameter.h">
+      <Filter>game\macro\tpa27</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Source\tpa27\rules-complex.txt">
+      <Filter>game\macro\tpa27</Filter>
+    </Text>
+    <Text Include="..\Source\tpa27\rules-simple.txt">
+      <Filter>game\macro\tpa27</Filter>
+    </Text>
+    <Text Include="..\Source\tpa27\rules-workers.txt">
+      <Filter>game\macro\tpa27</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -10,6 +10,7 @@
 #include "ScoutManager.h"
 #include "StrategyManager.h"
 #include "TimerManager.h"
+#include "RuleBasedSystem.h"
 
 namespace UAlbertaBot
 {
@@ -33,6 +34,7 @@ class GameCommander
 {
 	CombatCommander		    _combatCommander;
 	TimerManager		    _timerManager;
+	RuleBasedSystem			_workerManager;
 
 	BWAPI::Unitset          _validUnits;
 	BWAPI::Unitset          _combatUnits;

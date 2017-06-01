@@ -5,9 +5,8 @@
 using namespace UAlbertaBot;
 
 GameCommander::GameCommander() 
-    : _initialScoutSet(false)
+	: _initialScoutSet(false), _workerManager("C:\\Users\\Tom\\Documents\\Github\\ualbertabot\\UAlbertaBot\\Source\\tpa27\\rules-workers.txt")
 {
-
 }
 
 void GameCommander::update()
@@ -36,8 +35,14 @@ void GameCommander::update()
 
 	// economy and base managers
 	_timerManager.startTimer(TimerManager::Worker);
+	_workerManager.update();
+	_timerManager.stopTimer(TimerManager::Worker);
+
+	/*
+	_timerManager.startTimer(TimerManager::Worker);
 	WorkerManager::Instance().update();
 	_timerManager.stopTimer(TimerManager::Worker);
+	*/
 
 	_timerManager.startTimer(TimerManager::Production);
 	ProductionManager::Instance().update();

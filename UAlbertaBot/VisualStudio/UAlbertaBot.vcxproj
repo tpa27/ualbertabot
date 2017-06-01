@@ -85,7 +85,7 @@
     <ClCompile>
       <Optimization>Full</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>../BOSS/source;../SparCraft/source;../source;$(BWAPI_DIR)/include;$(BWTA_DIR)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../source/tpa27;../BOSS/source;../SparCraft/source;../source;$(BWAPI_DIR)/include;$(BWTA_DIR)/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;EXAMPLEAIMODULE_EXPORTS;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -146,6 +146,12 @@
     <ClCompile Include="..\Source\StrategyManager.cpp" />
     <ClCompile Include="..\Source\TankManager.cpp" />
     <ClCompile Include="..\source\TimerManager.cpp" />
+    <ClCompile Include="..\Source\tpa27\KnowledgeBase.cpp" />
+    <ClCompile Include="..\Source\tpa27\Parameter.cpp" />
+    <ClCompile Include="..\Source\tpa27\Rule.cpp" />
+    <ClCompile Include="..\Source\tpa27\RuleBase.cpp" />
+    <ClCompile Include="..\Source\tpa27\RuleBasedSystem.cpp" />
+    <ClCompile Include="..\Source\tpa27\Term.cpp" />
     <ClCompile Include="..\source\TransportManager.cpp" />
     <ClCompile Include="..\Source\UABAssert.cpp" />
     <ClCompile Include="..\Source\UAlbertaBotModule.cpp" />
@@ -189,6 +195,13 @@
     <ClInclude Include="..\Source\StrategyManager.h" />
     <ClInclude Include="..\Source\TankManager.h" />
     <ClInclude Include="..\source\TimerManager.h" />
+    <ClInclude Include="..\Source\tpa27\EffectType.h" />
+    <ClInclude Include="..\Source\tpa27\KnowledgeBase.h" />
+    <ClInclude Include="..\Source\tpa27\Parameter.h" />
+    <ClInclude Include="..\Source\tpa27\Rule.h" />
+    <ClInclude Include="..\Source\tpa27\RuleBase.h" />
+    <ClInclude Include="..\Source\tpa27\RuleBasedSystem.h" />
+    <ClInclude Include="..\Source\tpa27\Term.h" />
     <ClInclude Include="..\source\TransportManager.h" />
     <ClInclude Include="..\Source\UABAssert.h" />
     <ClInclude Include="..\Source\UAlbertaBotModule.h" />
@@ -196,6 +209,11 @@
     <ClInclude Include="..\Source\UnitUtil.h" />
     <ClInclude Include="..\source\WorkerData.h" />
     <ClInclude Include="..\source\WorkerManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\Source\tpa27\rules-complex.txt" />
+    <Text Include="..\Source\tpa27\rules-simple.txt" />
+    <Text Include="..\Source\tpa27\rules-workers.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
